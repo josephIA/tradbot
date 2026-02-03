@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: telegram-trading-bot
-    env: python
+    name: amajama-tradbot
+    runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python tradbot.py
     envVars:
       - key: BOT_TOKEN
-        sync: false
+        value: "8594787038:AAF9Hg0F7Z3IdZrhn1tIRSKdl2xZyJH-YZg"
