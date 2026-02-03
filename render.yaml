@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-trading-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python tradbot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
