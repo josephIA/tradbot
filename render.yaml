@@ -1,13 +1,6 @@
 services:
-  - type: web
+  - type: worker
     name: amajama-tradbot
     runtime: python
-    region: oregon
-    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python tradbot.py
-    envVars:
-      - key: BOT_TOKEN
-        value: "8594787038:AAF9Hg0F7Z3IdZrhn1tIRSKdl2xZyJH-YZg"
-      - key: ALPHA_KEY
-        value: "QOD4W0ZJYJK42WIX"
